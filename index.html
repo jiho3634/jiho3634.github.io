@@ -7,57 +7,60 @@
     <span style="color:red; font-size: 25px; background-color: lightgreen; font-weight: bolder">서울남부, 김지호, 202334-363705</span><br/>
     <table border>
       <caption>표 1. 수강교과목 현황</caption>
-        <thead> <!-- thead{background-color: lightgreen}-->
+        <thead style="background-color: lightgreen;text-align: center;">
           <tr>
             <th>과목</th>
             <th>학년</th>
             <th>학습진도율</th>
           </tr>
         </thead>
-        <tbody>
-          <tr>
-            <td>HTML5</td>
-            <td>2</td>
-            <td>6.67%</td>
-          </tr>
-          <tr>
-            <td>Java프로그래밍</td>
-            <td>2</td>
-            <td>0%</td>
-          </tr>
+        <tbody style="text-align: center; font-style: italic;">
           <tr>
             <td>인공지능</td>
             <td>3</td>
-            <td>100%</td>
+            <td><progress value=1 max=1></progress></td>
           </tr>
           <tr>
             <td>정보통신망</td>
             <td>4</td>
-            <td>73.33%</td>
+            <td><progress value=0.7333 max=1></progress></td>
           </tr>
           <tr>
             <td>컴퓨터보안</td>
             <td>4</td>
-            <td>20%</td>
+            <td><progress value=0.2 max=1></progress></td>
           </tr>
           <tr>
             <td>컴퓨터그래픽스</td>
             <td>4</td>
-            <td>26.67%</td>
+            <td><progress value=0.2667 max=1></progress></td>
           </tr>
           <tr>
             <td>모바일앱프로그래밍</td>
             <td>4</td>
-            <td>0%</td>
+            <td><progress value=0 max=1></progress></td>
+          </tr>
+          <tr>
+            <td>HTML5</td>
+            <td>2</td>
+            <td><progress value=0.0667 max=1></progress></td>
+          </tr>
+          <tr>
+            <td>Java프로그래밍</td>
+            <td>2</td>
+            <td><progress value=0 max=1></progress></td>
           </tr>
         </tbody>
-        <tfoot> <!-- tfoot{background-color: yellow}-->
+        <tfoot style="background-color: yellow;text-align: center;font-weight: bolder;">
           <tr>
             <td colspan="2">평균학습(%)</td>
-            <td></td>
-            <td></td>
+            <td><meter title="현재 평균 학습비율 32.38%" value=0.3238 max=1 min=0></meter></td>
           </tr>
         </tfoot>
     </table>
+    <figure>
+      <img src="progress.png" alt="study progress" width="300" height="200">
+      <figcaption>그림 1. 김지호 학습 진도율</figcaption>
+    </figure>
   </body>
 </html>
