@@ -19,17 +19,26 @@
 
     <!-- Main Content Section -->
     <section style="display: flex; margin: 20px;">
-        <!-- Article Section -->
-        <article style="flex: 2; padding: 20px; background-color: #e0e0e0; margin-right: 10px;">
-            <h2>운동 영상</h2>
-            <p>데드리프트 하는 영상 <a href="2_source_code.html" target="details_frame">202334_김지호</a></p>
-            <!-- Video Section -->
-            <video controls poster="3_poster.jpg" style="width: 150;" controlsList="nodownload" preload="metadata">
-                <source src="3_video.mp4#t=5,17" type="video/mp4">
-                브라우저가 비디오 태그를 지원하지 않습니다.
-            </video>
-        </article>
-
+        <!-- Articles Section -->
+        <div style="flex: 2; display: flex; flex-direction: column; margin-right: 10px;">
+            <article style="padding: 20px; background-color: #e0e0e0; margin-bottom: 10px;">
+                <h2>과제2 페이지를 세부정보의 삽입된 창에서 출력하기</h2>
+                  <details>
+                    <summary>202334_김지호</summary>
+                    <p><a href="2_source_code.html" target="details_frame"></a></p>
+                  </details>
+ 
+            </article>
+            <article style="padding: 20px; background-color: #e0e0e0; margin-bottom: 10px;">
+                <h2>운동 영상</h2>
+                <p>데드리프트 하는 영상</p>
+                <!-- Video Section -->
+                <video controls poster="3_poster.jpg" style="width: 100%;" controlsList="nodownload" preload="metadata">
+                    <source src="3_video.mp4#t=5,17" type="video/mp4">
+                    브라우저가 비디오 태그를 지원하지 않습니다.
+                </video>
+            </article>
+        </div>
         <!-- Aside Section -->
         <aside style="flex: 1; padding: 20px; background-color: #d0d0d0;">
             <h2>추가 정보</h2>
